@@ -82,3 +82,60 @@ h1{
     transform: rotate(180deg);
     transition: .5s;
 }
+.img-mobile{
+    display: none;
+}
+.attribution, .attribution a{
+    color: hsl(240, 5%, 91%);
+    text-decoration: none;
+}
+
+@media (max-width: 375px) {
+    .container{
+        flex-direction: column;
+        background-image: url('./images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        width: 90%;
+        margin-top: 130px;
+    }
+    .image{
+        background-image: none;
+        width: 100%;
+        position: relative;
+        max-height: 90px;
+    }
+    .img-mobile{
+        display: block;
+        width: 80%;
+        position: relative;
+        top: -6.8em;
+        left: 2em;
+    }
+    .box{
+        display: none;
+    }
+    .text{
+        text-align: center;
+        width: fit-content;
+        padding: 40px 24px;
+    }
+    h1{
+        margin-bottom: 10px;
+    }
+    .faq{
+        text-align: left;
+        padding: 15px 0;
+    }
+    .question{
+        font-size: 12px;
+        justify-content: space-between;
+    }
+    .answer{
+        font-size: 11px;
+        padding-right: 30px;
+    }
+    .question img{
+        margin-left: 16px;
+    }
+}
